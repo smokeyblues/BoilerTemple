@@ -3,9 +3,8 @@ function rowdyMenuBar() {
 		link: link,
 		restrict: 'EA',
 		template: `
-			<div>
+			<div class="menu-bar">
                 <div id="nav-img"></div>
-    			<h1>Menu Bar</h1>
     			<rowdy-menu-button data="{{button}}" ng-repeat="button in menuButtons">
 		`,
 	};

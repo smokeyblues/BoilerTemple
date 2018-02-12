@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 let gulp = require('gulp');
 let del = require('del');
 let plugins = require('gulp-load-plugins')();

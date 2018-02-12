@@ -5,10 +5,10 @@ const bodyComponent = {
 	controller: function () {
 
 	},
-	template: `<div class="container-body">
-    <div>Body</div>
-    <ui-view></ui-view>
-</div>`
+	template: `
+	<div class="body-container">
+    	<ui-view></ui-view>
+	</div>`
 };
 
 angular.module('BoilerTemple-site.layout')

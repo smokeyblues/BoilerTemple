@@ -3,3 +3,7 @@
 *.iml
 out
 gen
+
+yarn.lock
+node_modules/
+public/

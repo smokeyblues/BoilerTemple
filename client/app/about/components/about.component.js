@@ -6,6 +6,7 @@ const about = {
         ctrl.$onInit = function () {};
     },
     template:   `
+    <h1>This is the about page</h1>
 
     `
 };

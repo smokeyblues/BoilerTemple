@@ -1,10 +1,10 @@
-.container-main {
+.main-container {
 
-  .container-top {
+  .top-container {
     display: flex;
     flex-direction: column;
-    height: 92.9vh;
-    .container-left {
+    //height: 92.9vh;
+    .left-container {
       flex: 0 0 auto;
       flex-direction: column;
       // align-items: center;
@@ -16,7 +16,7 @@
         justify-content: stretch;
       }
 
-      .container-menu {
+      .menu-container {
         height: 150px;
         width: 100%;
         background-color: #31b0d5;
@@ -28,7 +28,7 @@
       }
     }
 
-    .container-right {
+    .right-container {
       flex: 0 0 auto;
 
       @include breakpoint($bp-768) {
@@ -39,8 +39,11 @@
     }
   }
 
-  .container-footer {
+  .footer-container {
     flex: 0 0 5vh;
-    background-color: #B99967;
+    align-items: flex-end;
+    height: 100%;
+    width: 100vw;
+    background-color: #31b0d5;
   }
 }

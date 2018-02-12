@@ -8,16 +8,16 @@ const layoutComponent = {
 		};
 	},
 	template: `
-		<div class="container-main">
-            <div class="container-top">
-                <div class="container-left">
+		<div class="main-container">
+            <div class="top-container">
+                <div class="left-container">
                     <header-component></header-component>
                 </div>
-                <div class="container-right">
+                <div class="right-container">
                     <body-component></body-component>
                 </div>
             </div>
-			<div class="container-footer">
+			<div class="footer-container">
 				<footer-component></footer-component>
 			</div>
 		</div>

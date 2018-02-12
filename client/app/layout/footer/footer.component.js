@@ -6,6 +6,8 @@ const footerComponent = {
 	},
 
 	template:`
+	<h1>Boiler Temple &#169; 2018</h1>
+	<h2>(just kidding about the copyright. This is an open source project.)</h2>
 
 	`
 };
