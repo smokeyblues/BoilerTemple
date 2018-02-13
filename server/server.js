@@ -15,12 +15,6 @@ app.use(express.static('public'));
 // setup the logger
 app.use(morgan('dev'));
 
-// make our database connection
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/BoilerTemple', function(errorTime){
-    errorTime ? console.log('NO CONNECTION TO DB') : console.log('CONNECTED TO DATABASE');
-});
-
 // call our routes
 routes(app);
 

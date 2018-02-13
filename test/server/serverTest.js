@@ -1,12 +1,11 @@
 const assert = require('chai').assert;
-const server = require('../server/server.js');
+const expect = require('chai').expect;
+const request = require('request');
 
-describe('server', function () {
-    before(function () {
-        server.listen(8000);
-    });
 
-    after(function () {
-        server.close();
-    });
+it('Server returning 200', function(done) {
+    request('http://localhost:3000', function (error, response, body) {
+        expect(response.statusCode).to.equal(200);
+        done();
+    })
 });
