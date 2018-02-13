@@ -4,7 +4,7 @@ node_js:
 
 install:
  - yarn
- - gulp &
 
 script:
+ - gulp
  - npm test
