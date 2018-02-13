@@ -2,9 +2,16 @@ language: node_js
 node_js:
   - "stable"
 
+cache:
+  yarn: true
+
+  directories:
+    - "node_modules"
+
 install:
  - yarn
 
 script:
- - gulp
+ - gulp &
+ - sleep 10
  - npm test
