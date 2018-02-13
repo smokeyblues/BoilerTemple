@@ -7,3 +7,6 @@ before_script:
 
 script:
  - gulp
+
+after_script:
+ - npm run test
