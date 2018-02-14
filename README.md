@@ -11,7 +11,7 @@
 [![Status](https://travis-ci.org/smokeyblues/BoilerTemple.svg?branch=master)](https://travis-ci.org/smokeyblues/BoilerTemple) 
  
  * David DM
-[![Dependencies Status](https://david-dm.org/smokeyblues/BoilerTemple.svg)](https://david-dm.org/smokeyblues/BoilerTemple) [![devDependencies Status](https://david-dm.org/smokeyblues/BoilerTemple.svg)](https://david-dm.org/smokeyblues/BoilerTemple?type=dev)
+[![Dependencies Status](https://david-dm.org/smokeyblues/BoilerTemple.svg)](https://david-dm.org/smokeyblues/BoilerTemple) [![devDependencies Status](https://david-dm.org/smokeyblues/BoilerTemple/dev-status.svg)](https://david-dm.org/smokeyblues/BoilerTemple?type=dev)
 
 * Coveralls.io
 [![Coverage Status](https://coveralls.io/repos/github/smokeyblues/BoilerTemple/badge.svg?branch=master)](https://coveralls.io/github/smokeyblues/BoilerTemple?branch=master)
