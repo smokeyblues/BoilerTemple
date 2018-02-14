@@ -9,12 +9,15 @@ cache:
     - "node_modules"
 
 install:
- - yarn
+  - npm install -g codecov
+  - yarn
 
 script:
- - gulp &
- - sleep 10
- - npm test
+  - gulp &
+  - sleep 10
+  - npm test
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - codecov
 
 after_script:
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
