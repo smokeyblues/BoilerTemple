@@ -18,3 +18,6 @@
 
 * synk.io 
 [![Known Vulnerabilities](https://snyk.io/test/github/smokeyblues/BoilerTemple/badge.svg)](https://snyk.io/test/github/smokeyblues/BoilerTemple)
+
+* Contributions Welcome
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/smokeyblues/BoilerTemple/issues)
