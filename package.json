@@ -6,6 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "mocha ./test/**/*.js || true",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover --no-default-excludes -x '**/node_modules/**' ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*.js",
     "start": "node server.js",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
@@ -30,6 +31,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+    "blanket": "^1.2.3",
     "browser-sync": "^2.18.13",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
@@ -47,12 +49,14 @@
     "gulp-strip-json-comments": "^2.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
+    "istanbul": "^0.4.5",
     "jshint": "^2.9.5",
     "livereload": "^0.6.2",
     "mocha": "^5.0.0",
     "mocha-lcov-reporter": "^1.3.0",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
+    "popper.js": "^1.12.9",
     "request": "^2.83.0"
   }
 }
