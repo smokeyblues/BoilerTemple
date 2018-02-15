@@ -1,26 +1,26 @@
 language: node_js
 node_js:
-  - "stable"
+ - "stable"
 
 cache:
-  yarn: true
+ yarn: true
 
-  directories:
-    - "node_modules"
+ directories:
+  - "node_modules"
 
 install:
-  - npm install -g codecov
-  - yarn
+ - npm install -g codecov
+ - yarn
 
 script:
-  - gulp &
-  - sleep 10
-  - npm test
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecov
+ - gulp &
+ - sleep 10
+ - npm test
+ - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+ - codecov
 
 after_script:
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+ - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 after_success:
-  - npm run coveralls
+ - npm run coveralls
