@@ -6,6 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha ./test/**/*.js || true",
+    "eslint": "eslint",
     "test-travis": "./node_modules/istanbul/lib/cli.js cover --no-default-excludes -x '**/node_modules/**' ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*.js",
     "start": "node server.js",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
@@ -36,6 +37,11 @@
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
     "del": "^3.0.0",
+    "eslint": "^4.18.1",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-angular": "^3.2.0",
+    "eslint-plugin-mocha": "^4.11.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^7.0.0",
@@ -57,6 +63,7 @@
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
     "popper.js": "^1.12.9",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "sinon": "^4.4.2"
   }
 }

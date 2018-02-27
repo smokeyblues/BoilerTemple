@@ -1,11 +1,11 @@
-function rowdyMenuBar() {
+function menuBar() {
 	const directive = {
 		link: link,
 		restrict: 'EA',
 		template: `
 			<div class="menu-bar">
                 <div id="nav-img"></div>
-    			<rowdy-menu-button data="{{button}}" ng-repeat="button in menuButtons">
+    			<menu-button data="{{button}}" ng-repeat="button in menuButtons">
 		`,
 	};
 	return directive;
@@ -27,4 +27,4 @@ function rowdyMenuBar() {
 
 angular
 	.module('BoilerTemple-site.widgets')
-	.directive('rowdyMenuBar', rowdyMenuBar);
+	.directive('menuBar', menuBar);

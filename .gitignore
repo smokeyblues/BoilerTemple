@@ -6,4 +6,6 @@ gen
 
 yarn.lock
 node_modules/
-public/
+public/scripts/
+public/styles/
+public/index.html

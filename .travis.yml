@@ -7,3 +7,20 @@ cache:
 
  directories:
   - "node_modules"
+
+install:
+ - npm install -g codecov
+ - yarn
+
+script:
+ - gulp &
+ - sleep 10
+ - npm test
+ - istanbul cover ./node_modules/mocha/bin/_mocha --reporter test -- -R spec
+ - codecov
+
+after_script:
+ - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
+after_success:
+ - npm run coveralls

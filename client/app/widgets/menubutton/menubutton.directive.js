@@ -1,4 +1,4 @@
-function rowdyMenuButton() {
+function menuButton() {
 	const directive = {
 		link: link,
 		restrict: 'EA',
@@ -15,4 +15,4 @@ function rowdyMenuButton() {
 
 angular
 	.module('BoilerTemple-site.widgets')
-	.directive('rowdyMenuButton', rowdyMenuButton);
+	.directive('menuButton', menuButton);

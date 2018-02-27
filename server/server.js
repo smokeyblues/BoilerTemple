@@ -1,9 +1,9 @@
-const express = require('express'),
-      bodyParser = require('body-parser'),
-      mongoose = require('mongoose'),
-      morgan = require ('morgan'),
-      routes = require('./controllers/routes'),
-      fs = require('fs');
+const express = require('express');
+// const bodyParser = require('body-parser');
+// const mongoose = require('mongoose');
+const morgan = require ('morgan');
+const routes = require('./controllers/routes');
+const fs = require('fs');
 
 let app = express();
 

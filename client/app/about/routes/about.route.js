@@ -3,7 +3,7 @@ function aboutRoute($stateProvider) {
 		.state({
 			name: 'app.about',
 			url: 'about',
-			component: 'about'
+			component: 'about',
 		});
 }
 

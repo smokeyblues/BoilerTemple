@@ -1,4 +1,4 @@
-function SiteRun () {
+function SiteRun() {
 	console.log('Boiler Temple Site Up and Running');
 }
 

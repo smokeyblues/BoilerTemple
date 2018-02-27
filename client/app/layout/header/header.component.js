@@ -5,7 +5,7 @@ const headerComponent = {
 	},
 	template: `
 	<div class="menu-container">
-    	<rowdy-menu-bar></rowdy-menu-bar>
+    	<menu-bar></menu-bar>
 	</div>`
 };
 

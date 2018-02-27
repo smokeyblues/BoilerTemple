@@ -6,5 +6,5 @@ angular.module('BoilerTemple-site', [
     'BoilerTemple-site.home',
     'BoilerTemple-site.layout',
     'BoilerTemple-site.login',
-    'BoilerTemple-site.widgets'
+    'BoilerTemple-site.widgets',
 ]);

@@ -3,7 +3,7 @@ function findRoute($stateProvider) {
         .state({
             name: 'app.find',
             url: 'find',
-            component: 'find'
+            component: 'find',
         });
 }
 

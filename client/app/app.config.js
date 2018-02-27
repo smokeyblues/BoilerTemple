@@ -1,4 +1,4 @@
-function bcSiteConfig($locationProvider, $urlRouterProvider){
+function bcSiteConfig($locationProvider, $urlRouterProvider) {
 	$locationProvider.html5Mode(true);
 	$urlRouterProvider.otherwise('/');
 }

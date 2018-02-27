@@ -1,9 +1,9 @@
-function loginRoute ($stateProvider) {
+function loginRoute($stateProvider) {
 	$stateProvider
 		.state({
 			name: 'login',
 			url: '/login',
-			component: 'loginComponent'
+			component: 'loginComponent',
 		});
 }
 
