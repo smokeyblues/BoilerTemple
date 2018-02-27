@@ -1,5 +1,8 @@
 function apiService($q, $http) {
-// This variable is for service level storage, it will not survive a browser reload
+/* This variable is for service level storage,
+ it will not survive a browser reload
+*/
+
 // let variable = {};
     const service = {
         getMenu: getMenu,
@@ -11,14 +14,14 @@ function apiService($q, $http) {
     function getMenu() {
         return $http({
             method: 'GET',
-            url: '/api/menu'
+            url: '/api/menu',
         });
     }
 
     function getEvents() {
         return $http({
             method: 'GET',
-            url: '/api/events'
+            url: '/api/events',
         });
     }
 
@@ -26,9 +29,7 @@ function apiService($q, $http) {
 
     }
 
-    function internalFunction() {
-
-    }
+    // function internalFunction() {}
 }
 
 angular.module('BoilerTemple-site.common')

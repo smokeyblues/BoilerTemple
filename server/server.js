@@ -1,9 +1,9 @@
 const express = require('express');
 // const bodyParser = require('body-parser');
 // const mongoose = require('mongoose');
-const morgan = require ('morgan');
+const morgan = require('morgan');
 const routes = require('./controllers/routes');
-const fs = require('fs');
+// const fs = require('fs');
 
 let app = express();
 
@@ -18,8 +18,8 @@ app.use(morgan('dev'));
 // call our routes
 routes(app);
 
-app.listen(PORT, function(err){
-    if(err) {
+app.listen(PORT, function(err) {
+    if (err) {
         console.log(`SERVER ERROR: ${err}`);
         process.exit(1);
     } else {

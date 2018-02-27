@@ -1,4 +1,4 @@
-var menu = require('../data/menu.json');
+let menu = require('../data/menu.json');
 
 module.exports = {
 	// get things from the json file

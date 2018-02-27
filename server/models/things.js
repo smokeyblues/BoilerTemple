@@ -1,6 +1,8 @@
-let mongoose = require('mongoose');
+// This is an example schema... Duh.
 
-let thingSchema = mongoose.Schema({
+const mongoose = require('mongoose');
+
+const thingSchema = mongoose.Schema({
     name: String,
     stuff: String,
 });

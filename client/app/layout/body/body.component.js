@@ -2,13 +2,14 @@ const bodyComponent = {
 	bindings: {
 
 	},
-	controller: function () {
+	controller: function() {
 
 	},
 	template: `
 	<div class="body-container">
     	<ui-view></ui-view>
-	</div>`
+	</div>
+	`,
 };
 
 angular.module('BoilerTemple-site.layout')

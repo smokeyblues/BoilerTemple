@@ -14,14 +14,13 @@ function menuBar() {
 		scope.menuButtons = [
 			{
 				name: 'Home',
-				sref: 'app.home'
+				sref: 'app.home',
 			},
 			{
 				name: 'About',
-				sref: 'app.about'
-			}
+				sref: 'app.about',
+			},
 		];
-
 	}
 }
 

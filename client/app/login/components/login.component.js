@@ -1,29 +1,29 @@
 const loginComponent = {
 	bindings: {},
-	controller: function ($state, authService, errorService) {
+	controller: function($state, $log, authService, errorService) {
 		let ctrl = this;
 
-		//DECLARE CONTROLLER VARIABLES
-		ctrl.greeting = "hello world";
+		// DECLARE CONTROLLER VARIABLES
+		ctrl.greeting = 'hello world';
 		ctrl.registerObj = null;
 
-		//DECLARE PUBLIC FUNCTIONS
+		// DECLARE PUBLIC FUNCTIONS
 		ctrl.register = register;
 
-		//LIFECYCLE FUNCTIONS
-		ctrl.$onInit = function () {
+		// LIFECYCLE FUNCTIONS
+		ctrl.$onInit = function() {
 		};
-		ctrl.$postLink = function () {
+		ctrl.$postLink = function() {
 		};
-		ctrl.$onChange = function () {
+		ctrl.$onChange = function() {
 		};
-		ctrl.$onDestroy = function () {
+		ctrl.$onDestroy = function() {
 		};
 
-		//FUNCTIONS
-		function register () {
+		// FUNCTIONS
+		function register() {
 			if (ctrl.registerPassword !== ctrl.confirmPassword) {
-				console.log('nope');
+				$log.log('nope');
 			} else {
 				authService
 					.register(ctrl.registerObj)
@@ -32,17 +32,17 @@ const loginComponent = {
 			}
 		}
 
-		function navHome (res) {
-			if(res){
+		function navHome(res) {
+			if (res) {
 				$state.go('home');
 			}
 		}
 
-		function showError (err) {
-			console.log('login Error', err);
+		function showError(err) {
+			$log.log('login Error', err);
 			errorService.loginError(err);
 		}
- 	},
+	},
 	template: `<div class='login-background'>
 
     <form class="login-modal" ng-hide='auth.create'>
@@ -52,20 +52,35 @@ const loginComponent = {
 
             <div class="form-group">
                 <label for="Email">Email address</label>
-                <input type="email" class="form-control" id="Email" placeholder="Email" ng-model='auth.email'>
+                <input 
+                type="email" 
+                class="form-control" 
+                id="Email" 
+                placeholder="Email" 
+                ng-model='auth.email'>
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type='password' class="form-control" id="password" placeholder="Password"
-                       ng-model='auth.password'>
+                <input 
+                type='password' 
+                class="form-control" 
+                id="password" 
+                placeholder="Password" 
+                ng-model='auth.password'>
             </div>
 
             <!-- <div class="form-group"> -->
-            <button type="submit" class="btn btn-default" ng-click='auth.login()'>Submit</button>
+            <button 
+            type="submit" 
+            class="btn btn-default" 
+            ng-click='auth.login()'>Submit</button>
             <h3>{{auth.loginError}}</h3>
         </div>
-        <h4 ng-click='auth.create =! auth.create' class='exitCursor signup'>Create Account</h4>
+        <h4 
+        ng-click='auth.create =! auth.create' 
+        class='exitCursor signup'
+        >Create Account</h4>
     </form>
 
 
@@ -78,32 +93,55 @@ const loginComponent = {
 
             <div class="form-group">
                 <label for="Name">First Name?</label>
-                <input type="text" placeholder="First Name" ng-model='auth.firstName' class="form-control" required>
+                <input 
+                type="text" 
+                placeholder="First Name" 
+                ng-model='auth.firstName' 
+                class="form-control" 
+                required>
             </div>
 
             <div class="form-group">
                 <label for="Email">Email address</label>
-                <input ng-class='{red: auth.emailField === true}' type="email" class="form-control" placeholder="Email"
-                       ng-model='auth.registerEmail' required>
+                <input 
+                ng-class='{red: auth.emailField === true}' 
+                type="email" 
+                class="form-control" 
+                placeholder="Email"
+                ng-model='auth.registerEmail' 
+                required>
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input ng-class='{red: auth.noPassMatch === true}' type='password' class="form-control"
-                       placeholder="Password" ng-model='auth.registerPassword' required>
+                <input 
+                ng-class='{red: auth.noPassMatch === true}' 
+                type='password' class="form-control"
+                placeholder="Password" 
+                ng-model='auth.registerPassword' 
+                required>
             </div>
 
             <div class="form-group">
                 <label for="password">Confirm Password</label>
-                <input ng-class='{red: auth.noPassMatch === true}' type='password' class="form-control"
-                       placeholder="Confirm Password" ng-model='auth.confirmPassword' required>
+                <input 
+                ng-class='{red: auth.noPassMatch === true}' 
+                type='password' class="form-control"
+                placeholder="Confirm Password" 
+                ng-model='auth.confirmPassword' 
+                required>
             </div>
 
-            <button type="submit" class="btn btn-default" ng-click='auth.register()'>Submit</button>
+            <button 
+            type="submit" 
+            class="btn btn-default" 
+            ng-click='auth.register()'
+            >Submit</button>
             <h3>{{auth.tryAgain}}</h3>
         </div>
     </form>
-</div>`
+</div>
+`,
 };
 
 angular.module('BoilerTemple-site.login')

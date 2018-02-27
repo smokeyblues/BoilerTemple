@@ -1,14 +1,14 @@
 const about = {
     bindings: {},
-    controller: function () {
+    controller: function() {
         let ctrl = this;
 
-        ctrl.$onInit = function () {};
+        ctrl.$onInit = function() {};
     },
-    template:   `
+    template: `
     <h1>This is the about page</h1>
 
-    `
+    `,
 };
 
 angular.module('BoilerTemple-site.about')

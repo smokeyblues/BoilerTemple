@@ -1,10 +1,10 @@
 const layoutComponent = {
 	bindings: {},
-	controller: function () {
+	controller: function() {
 		let ctrl = this;
 
-		ctrl.$onInit = function () {
-			console.log('init layout');
+		ctrl.$onInit = function() {
+			// console.log('init layout');
 		};
 	},
 	template: `
@@ -21,7 +21,7 @@ const layoutComponent = {
 				<footer-component></footer-component>
 			</div>
 		</div>
-	`
+	`,
 };
 
 angular.module('BoilerTemple-site.layout')

@@ -4,7 +4,9 @@ function baseRoute($stateProvider) {
 			name: 'app',
 			abstract: true,
 			url: '/',
-			template: `<layout-component></layout-component>`
+			template: `
+				<layout-component></layout-component>
+			`,
 		});
 }
 

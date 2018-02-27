@@ -7,8 +7,10 @@ module.exports = {
         "jquery": true,
         "node": false
     },
+    "extends": ["angular", "eslint:recommended", "google"],
     "rules": {
         "no-var": "off",
-        "prefer-const": "off"
+        "prefer-const": "off",
+        "no-tabs": "off"
     }
 };

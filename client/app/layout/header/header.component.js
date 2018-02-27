@@ -1,12 +1,13 @@
 const headerComponent = {
 	bindings: {},
-	controller: function () {
+	controller: function() {
 
 	},
 	template: `
 	<div class="menu-container">
     	<menu-bar></menu-bar>
-	</div>`
+	</div>
+	`,
 };
 
 angular.module('BoilerTemple-site.layout')

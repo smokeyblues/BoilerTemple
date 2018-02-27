@@ -1,15 +1,14 @@
 const find = {
     bindings: {},
-    controller: function () {
+    controller: function() {
         let ctrl = this;
 
-        ctrl.$onInit = function () {
+        ctrl.$onInit = function() {
         };
-
     },
     template: `
     <h1>This is the FIND page.</h1>
-    `
+    `,
 };
 
 angular.module('BoilerTemple-site.find')

@@ -2,18 +2,20 @@ const home = {
 	bindings: {
 
 	},
-	controller: function () {
+	controller: function($log) {
 		let ctrl = this;
 		ctrl.title = 'Boiler Temple';
 
-		ctrl.$onInit = function () {
-			console.log('init Home');
+		ctrl.$onInit = function() {
+			$log.log('init Home');
 		};
-		ctrl.$postLink = function () {};
+		ctrl.$postLink = function() {};
 	},
 	template: `
-		<div class="home-container"><h1>This is the home page</h1></div>
-	`
+		<div class="home-container">
+			<h1>This is the home page</h1>
+		</div>
+	`,
 
 };
 
