@@ -16,6 +16,10 @@
  
 [![Dependencies Status](https://david-dm.org/smokeyblues/BoilerTemple.svg)](https://david-dm.org/smokeyblues/BoilerTemple) [![devDependencies Status](https://david-dm.org/smokeyblues/BoilerTemple/dev-status.svg)](https://david-dm.org/smokeyblues/BoilerTemple?type=dev)
 
+* Codecov.io
+
+[![codecov](https://codecov.io/gh/smokeyblues/BoilerTemple/branch/master/graph/badge.svg)](https://codecov.io/gh/smokeyblues/BoilerTemple)
+
 * Coveralls.io
 
 [![Coverage Status](https://coveralls.io/repos/github/smokeyblues/BoilerTemple/badge.svg?branch=master)](https://coveralls.io/github/smokeyblues/BoilerTemple?branch=master)
