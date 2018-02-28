@@ -20,10 +20,6 @@
 
 [![codecov](https://codecov.io/gh/smokeyblues/BoilerTemple/branch/master/graph/badge.svg)](https://codecov.io/gh/smokeyblues/BoilerTemple)
 
-* Coveralls.io
-
-[![Coverage Status](https://coveralls.io/repos/github/smokeyblues/BoilerTemple/badge.svg?branch=master)](https://coveralls.io/github/smokeyblues/BoilerTemple?branch=master)
-
 * synk.io 
 
 [![Known Vulnerabilities](https://snyk.io/test/github/smokeyblues/BoilerTemple/badge.svg)](https://snyk.io/test/github/smokeyblues/BoilerTemple)
