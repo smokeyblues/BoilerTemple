@@ -1,3 +1,8 @@
+/**
+ * @memberOf angular_module.BoilerTemple-site
+ * @description changes state to 'home' when fired.
+ * @param {object} $stateProvider
+ */
 function homeRoute($stateProvider) {
 	$stateProvider
 		.state({

@@ -1,3 +1,8 @@
+/**
+ * @memberOf angular_module.BoilerTemple.widgets
+ * @description provides the names and state reference of links for top menu
+ * @return {{link: link, restrict: string, template: string}}
+ */
 function menuBar() {
 	const directive = {
 		link: link,
@@ -10,6 +15,12 @@ function menuBar() {
 	};
 	return directive;
 
+    /**
+	 *
+     * @param {object} scope
+     * @param {object} element
+     * @param {object} attrs
+     */
 	function link(scope, element, attrs) {
 		scope.menuButtons = [
 			{

@@ -1,3 +1,11 @@
+/**
+ * @memberOf angular_module.BoilerTemple-site
+ * @description This is an angular service that serves APIs defined in
+ * ./server/controllers.
+ * @param {object} $q
+ * @param {object} $http
+ * @return {{getMenu: getMenu, getEvents: getEvents, setSomething: setSomething}}
+ */
 function apiService($q, $http) {
 /* This variable is for service level storage,
  it will not survive a browser reload
@@ -6,27 +14,20 @@ function apiService($q, $http) {
 // let variable = {};
     const service = {
         getMenu: getMenu,
-        getEvents: getEvents,
-        setSomething: setSomething,
     };
     return service;
 
+    /**
+     * @function getMenu
+     * @description serves data returned from menuCtrl.get call from
+     * server/controllers/menuCtrl.js
+     * @return {*}
+     */
     function getMenu() {
         return $http({
             method: 'GET',
             url: '/api/menu',
         });
-    }
-
-    function getEvents() {
-        return $http({
-            method: 'GET',
-            url: '/api/events',
-        });
-    }
-
-    function setSomething() {
-
     }
 
     // function internalFunction() {}

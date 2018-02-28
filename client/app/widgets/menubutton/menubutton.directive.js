@@ -1,3 +1,8 @@
+/**
+ * @memberOf angular_module.BoilerTemple.widgets
+ * @description returns a list of links to populate the menu bar.
+ * @return {{link: link, restrict: string, template: string}}
+ */
 function menuButton() {
 	const directive = {
 		link: link,
@@ -8,6 +13,12 @@ function menuButton() {
 	};
 	return directive;
 
+    /**
+	 *
+     * @param {object} scope
+     * @param {object} element
+     * @param {object} attrs
+     */
 	function link(scope, element, attrs) {
 		scope.button = scope.$eval(attrs.data);
 	}

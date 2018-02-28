@@ -1,3 +1,9 @@
+/**
+ * @function baseRoute
+ * @memberOf angular_module.BoilerTemple
+ * @description provides the state for the base route.
+ * @param {object} $stateProvider
+ */
 function baseRoute($stateProvider) {
 	$stateProvider
 		.state({

@@ -1,3 +1,8 @@
+/**
+ * @memberOf angular_module.BoilerTemple-site
+ * @description changes state to 'login' state
+ * @param {object} $stateProvider
+ */
 function loginRoute($stateProvider) {
 	$stateProvider
 		.state({

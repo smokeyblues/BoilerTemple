@@ -1,3 +1,8 @@
+/**
+ * @memberOf angular_module.BolerTemple-site.login
+ * @description provides the view template and functionality for 'login' state
+ * @type {{bindings: {}, controller: loginComponent.controller, template: string}}
+ */
 const loginComponent = {
 	bindings: {},
 	controller: function($state, $log, authService, errorService) {
@@ -21,6 +26,12 @@ const loginComponent = {
 		};
 
 		// FUNCTIONS
+        /**
+		 * @function register
+		 * @description Takes password input from user,
+		 * checks if it equals confirm password,
+		 * and passes inputted password to authService to register new user.
+		 * */
 		function register() {
 			if (ctrl.registerPassword !== ctrl.confirmPassword) {
 				$log.log('nope');
@@ -32,12 +43,24 @@ const loginComponent = {
 			}
 		}
 
+        /**
+		 * @function navHome
+		 * @description changes state to 'home' or '/' route once authService
+		 * has completed registration and returns response object to register
+		 * function.
+         * @param {object} res
+         */
 		function navHome(res) {
 			if (res) {
 				$state.go('home');
 			}
 		}
 
+        /**
+		 * @function showError
+		 * @description passes err object to errorService
+         * @param {object} err
+         */
 		function showError(err) {
 			$log.log('login Error', err);
 			errorService.loginError(err);

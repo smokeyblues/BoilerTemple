@@ -1,3 +1,9 @@
+/**
+ *  @function aboutRoute
+ *  @param {object} $stateProvider
+ * @memberOf angular_module.BoilerTemple
+ * @description This is an angularjs function that changes state to 'about'
+ */
 function aboutRoute($stateProvider) {
 	$stateProvider
 		.state({
