@@ -19,11 +19,12 @@ script:
  - gulp &
  - sleep 10
  - npm test
- - istanbul cover ./node_modules/mocha/bin/_mocha --reporter test -- -R spec
- - codecov
+# - istanbul cover ./node_modules/mocha/bin/_mocha --reporter test -- -R spec
+# - codecov
 
-after_script:
- - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+#after_script:
+# - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 after_success:
- - npm run coveralls
+# - npm run coveralls
+ - codecov --file coverage/lcov.info --disable search
