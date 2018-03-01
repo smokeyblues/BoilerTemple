@@ -4,7 +4,7 @@ const request = require('request');
 
 
 it('Server returning 200', function(done) {
-    request('http://localhost:3000', function(error, response, body) {
+    request('http://localhost:3000', function(error, response) {
         expect(response.statusCode).to.equal(200);
         done();
     });

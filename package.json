@@ -5,7 +5,7 @@
   "repository": "https://github.com/smokeyblues/BoilerTemple.git",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha ./test/**/*.js || true",
+    "test": "./node_modules/.bin/mocha",
     "eslint": "eslint",
     "test-travis": "./node_modules/istanbul/lib/cli.js cover --no-default-excludes -x '**/node_modules/**' ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*.js",
     "start": "node server.js",
