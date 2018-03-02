@@ -1,14 +1,12 @@
 # Welcome to the Boiler Temple
 
-[![Join the chat at https://gitter.im/BoilerTemple/Lobby](https://badges.gitter.im/BoilerTemple/Lobby.svg)](https://gitter.im/BoilerTemple/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 *From which the greatest proto-web creature dwells*
 
 ## Badges?! We need all the stinking badges!
 
 * Gitter
 
-[![Gitter](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg
-)](https://gitter.im/smokeyblues/BoilerTemple "Gitter chat")
+[![Join the chat at https://gitter.im/BoilerTemple/Lobby](https://badges.gitter.im/BoilerTemple/Lobby.svg)](https://gitter.im/BoilerTemple/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 * Travis CI
 
