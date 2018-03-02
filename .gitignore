@@ -4,6 +4,8 @@
 out
 gen
 
+coverage/
+
 yarn.lock
 node_modules/
 public/scripts/
