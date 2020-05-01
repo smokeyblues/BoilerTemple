@@ -9,7 +9,9 @@
     "eslint": "eslint",
     "test-travis": "./node_modules/istanbul/lib/cli.js cover --no-default-excludes -x '**/node_modules/**' ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*.js",
     "start": "node server.js",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -27,7 +29,8 @@
     "jquery": "^3.2.1",
     "mongoose": "^4.10.0",
     "morgan": "^1.8.1",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -66,5 +69,6 @@
     "popper.js": "^1.12.9",
     "request": "^2.83.0",
     "sinon": "^4.4.2"
-  }
+  },
+  "snyk": true
 }
